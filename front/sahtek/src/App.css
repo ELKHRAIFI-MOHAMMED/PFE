@@ -1,0 +1,234 @@
+#h {
+    
+  top: 10px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  width: 170px; /* Adjust as needed */
+  height: 140px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 52px;
+  box-shadow:  -22px -22px 43px #8d8282,
+           22px 22px 43px #928686;
+}
+
+.human-body {
+  width: 207px;
+  position: relative;
+  padding-top: 240px;
+  height: 260px;
+  display: block;
+  margin: 40px auto;
+}
+
+.human-body svg:hover {
+  cursor: pointer;
+}
+
+.human-body svg:hover path {
+  fill: #00c441;
+}
+
+.human-body svg {
+  position: absolute;
+  left: 50%;
+  fill: #57c9d5;
+}
+
+.human-body svg.head {
+  margin-left: -28.5px;
+  top: -6px;
+}
+.human-body svg.shoulder {
+  margin-left: -53.5px;
+  top: 69px;
+}
+
+.human-body svg.arm {
+  margin-left: -78px;
+  top: 112px;
+}
+.human-body svg.cheast {
+  margin-left: -43.5px;
+  top: 88px;
+}
+
+.human-body svg.stomach {
+  margin-left: -37.5px;
+  top: 130px;
+}
+.human-body svg.legs {
+  margin-left: -46.5px;
+  top: 205px;
+  z-index: 9999;
+}
+.human-body svg.hands {
+  margin-left: -102.5px;
+  top: 224px;
+}
+
+#area {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Courier New;
+  color: #a5a5a5;
+}
+
+#area #data {
+  color: black;
+}
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  height: 190px; 
+  margin-bottom: 1px;
+}
+h2 {
+  text-align: center;
+  margin: 0; 
+}
+/* Interface1.css */
+
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  width: 100px; /* Ajuster la largeur selon votre logo */
+}
+
+/* Form styles */
+.form {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 600px; /* Largeur maximale du formulaire */
+}
+
+/* Form labels */
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: green;
+}
+
+/* Form input styles */
+.form input[type="text"],
+.form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Checkbox styles */
+.form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Button styles */
+.cssbuttons-io-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Footer links */
+footer a {
+  margin: 0 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Footer paragraph styles */
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+
+
+/* interface 3 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.malade-infos {
+  margin-bottom: 20px;
+}
+
+.consigne,
+.symptome {
+  margin-bottom: 20px;
+}
+
+.card-medcin {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card-medcin p {
+  margin: 0;
+}
+
+.card-medcin .bio {
+  margin-bottom: 10px;
+}
+
+/* Styles spécifiques à la mise en page sur desktop */
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .malade-infos {
+    grid-column: span 3;
+  }
+
+  .consigne,
+  .symptome {
+    grid-column: span 1;
+  }
+
+  .list-medcin {
+    grid-column: span 3;
+  }
+}
